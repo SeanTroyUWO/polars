@@ -294,6 +294,11 @@ where
                 .map(|v| NumCast::from(v).unwrap())
                 .ok_or_else(err_fill_null)?,
         )?,
+        FillNullStrategy::Median => ca.fill_null_with_values(
+            ca.median()
+                .map(|v| NumCast::from(v).unwrap())
+                .ok_or_else(err_fill_null)?,
+        )?,
         FillNullStrategy::One => return ca.fill_null_with_values(One::one()),
         FillNullStrategy::Zero => return ca.fill_null_with_values(Zero::zero()),
         FillNullStrategy::MinBound => return ca.fill_null_with_values(Bounded::min_value()),

@@ -525,6 +525,8 @@ pub enum FillNullStrategy {
     Forward(FillNullLimit),
     /// mean value of array
     Mean,
+    /// median value of array
+    Median,
     /// minimal value in array
     Min,
     /// maximum value in array
