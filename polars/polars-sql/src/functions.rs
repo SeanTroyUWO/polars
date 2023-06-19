@@ -107,6 +107,49 @@ pub(crate) enum PolarsSqlFunctions {
     /// SELECT RTRIM(column_1) from df;
     /// ```
     RTrim,
+
+    /// SQL 'regexp' function
+    /// ```sql
+    /// SELECT  from df;
+    /// ```
+    REGEXP,
+
+    /// SQL 'regexp_count' function
+    /// ```sql
+    /// SELECT  from df;
+    /// ```
+    REGEXP_COUNT,
+
+    /// SQL 'regexp_instr' function
+    /// ```sql
+    /// SELECT  from df;
+    /// ```
+    REGEXP_INSTR,
+
+    /// SQL 'regexp_replace' function
+    /// ```sql
+    /// SELECT  from df;
+    /// ```
+    REGEXP_REPLACE,
+
+    /// SQL 'regexp_substr' function
+    /// ```sql
+    /// SELECT  from df;
+    /// ```
+    REGEXP_SUBSTR,
+
+    /// SQL 'regexp_match' function
+    /// ```sql
+    /// SELECT  from df;
+    /// ```
+    REGEXP_MATCH,
+
+    /// SQL 'regexp_matches' function
+    /// ```sql
+    /// SELECT  from df;
+    /// ```
+    REGEXP_MATCHES,
+
     /// SQL 'starts_with' function
     /// ```sql
     /// SELECT STARTS_WITH(column_1, 'a') from df;
